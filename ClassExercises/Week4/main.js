@@ -12,12 +12,19 @@ const sizes = {
 const scene = new THREE.Scene();// scene constructor
 scene.background = new THREE.Color(0x202020);
 
-const camera = new THREE.PerspectiveCamera(
-    75, sizes.width/sizes.height, 0.1, 1000
-);
+const aspect = sizes.width / sizes.height;
 
-camera.position.z=3;
-scene.add(camera);
+const camera = new THREE.OrthographicCamera(
+  -1* aspect, // left
+  1* aspect,  // right
+  1,          // top
+  -1,         // bottom
+  0.1,        // near
+  100         // far
+);
+scene.add(camera)
+
+camera.position.z = 3;
 
 const renderer= new THREE.WebGLRenderer({antialias:true});
 renderer.setSize(sizes.width, sizes.height);
