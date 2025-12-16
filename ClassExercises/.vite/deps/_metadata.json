@@ -1,0 +1,55 @@
+{
+  "hash": "1019ba09",
+  "configHash": "0b1afbec",
+  "lockfileHash": "1a645046",
+  "browserHash": "7fc2ddb1",
+  "optimized": {
+    "three": {
+      "src": "../../Exercises/node_modules/three/build/three.module.js",
+      "file": "three.js",
+      "fileHash": "bbf75f12",
+      "needsInterop": false
+    },
+    "three/examples/jsm/Addons.js": {
+      "src": "../../Exercises/node_modules/three/examples/jsm/Addons.js",
+      "file": "three_examples_jsm_Addons__js.js",
+      "fileHash": "218c74af",
+      "needsInterop": false
+    },
+    "three/examples/jsm/controls/OrbitControls.js": {
+      "src": "../../Week4/node_modules/three/examples/jsm/controls/OrbitControls.js",
+      "file": "three_examples_jsm_controls_OrbitControls__js.js",
+      "fileHash": "981911ef",
+      "needsInterop": false
+    },
+    "three/examples/jsm/helpers/RectAreaLightHelper.js": {
+      "src": "../../Week4/node_modules/three/examples/jsm/helpers/RectAreaLightHelper.js",
+      "file": "three_examples_jsm_helpers_RectAreaLightHelper__js.js",
+      "fileHash": "bb5ab784",
+      "needsInterop": false
+    },
+    "three/examples/jsm/libs/lil-gui.module.min.js": {
+      "src": "../../Week6/node_modules/three/examples/jsm/libs/lil-gui.module.min.js",
+      "file": "three_examples_jsm_libs_lil-gui__module__min__js.js",
+      "fileHash": "65cb0f70",
+      "needsInterop": false
+    },
+    "three/tsl": {
+      "src": "../../../../node_modules/three/build/three.tsl.js",
+      "file": "three_tsl.js",
+      "fileHash": "ded4f2f2",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-PXWIBSSA": {
+      "file": "chunk-PXWIBSSA.js"
+    },
+    "chunk-NG5QNAIO": {
+      "file": "chunk-NG5QNAIO.js"
+    },
+    "chunk-PZ5AY32C": {
+      "file": "chunk-PZ5AY32C.js"
+    }
+  }
+}

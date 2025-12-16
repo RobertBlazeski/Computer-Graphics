@@ -4,13 +4,21 @@ import { color } from 'three/tsl';
 const scene = new THREE.Scene(); //scene constructor
 scene.background = new THREE.Color(0x202020);
 
-const camera = new THREE.PerspectiveCamera(
-    75, window.innerWidth/window.innerHeight, 0.1, 1000
+const aspect = window.innerWidth / window.innerHeight;
+
+const camera = new THREE.OrthographicCamera(
+  -1* aspect, // left
+  1* aspect,  // right
+  1,          // top
+  -1,         // bottom
+  0.1,        // near
+  100         // far
 );
+scene.add(camera)
 
 camera.position.z = 10;
-camera.position.x=2
-camera.rotation.y=Math.PI*0.1
+
+
 
 const renderer = new THREE.WebGLRenderer({antialias:true});
 renderer.setSize(window.innerWidth, window.innerHeight);

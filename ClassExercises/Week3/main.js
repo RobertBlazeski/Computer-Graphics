@@ -7,8 +7,17 @@ import * as THREE from 'three';
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0x202020);
 
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000
+const aspect = window.width / window.height;
+
+const camera = new THREE.OrthographicCamera(
+  -1* aspect, // left
+  1* aspect,  // right
+  1,          // top
+  -1,         // bottom
+  0.1,        // near
+  100         // far
 );
+scene.add(camera)
 camera.position.set(1, 6, 6);
 camera.rotation.x=-0.6
 
